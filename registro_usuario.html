@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de usuario</title>
+</head>
+<body>
+
+    <h1>
+        Formulario de Registro de Usuarios
+    </h1>
+    <form action="/procesar" method="post">
+        <label> Nombre:</label> <br> 
+        <input type="text" name="nombre" placeholder="Nombre completo"><br>
+      
+    <label >Correo electrónico:</label><br>
+    <input type="email" id="mail" name="user_mail" /> <br>
+  
+    <label for="pwd">Ingrese contraseña:</label>
+<input type="password" id="pwd" name="pwd" required placeholder="Ingrese contraseña" minlength="6" maxlength="20">
+<br><br>
+<label for="pwdC">Confirme su contraseña:</label>
+<input type="password" id="pwdC" name="pwdC" required placeholder="Confirme su contraseña" minlength="6" maxlength="20">
+<br><br>
+
+    <label >Fecha de nacimiento:</label><br>
+    <input type="date" name="fecha_nacimiento"><br>
+
+    <label >Género:</label><br> 
+<input type="radio" name="genero" value="masculino"> Masculino<br> 
+<input type="radio" name="genero" value="femenino"> Femenino<br> 
+<input type="radio" name="genero" value="otro"> Otro<br> 
+
+
+<label for="ciudad">País de residencia:</label>
+    <select name="ciudad">
+        <option value="EL">El salavdor</option>
+        <option value="CO">Colombia</option>
+        <option value="AR">Argentina</option>
+        <option value="M">Madrid</option>
+        <option value="ES">España</option>
+        <option value="" selected="selected">Selecciona ciudad...</option>
+    </select> 
+
+    <br><br>
+<label for="aceptar">Acepto los términos y condiciones:</label>
+<input type="checkbox" id="aceptar" name="aceptar" required>
+<br>
+
+<input type="submit" value="Ingresar">
+    
+    
+</form>
+    
+</body>
+</html>
